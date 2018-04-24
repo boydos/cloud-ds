@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zuul-filter
+server:
+  port: 8769
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    apia:
+      path: /api-a/**
+      serviceId: ribbon-filter
+    apib:
+      path: /api-b/**
+      serviceId: feign-filter

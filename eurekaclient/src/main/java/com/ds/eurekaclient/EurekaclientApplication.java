@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EurekaclientApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EurekaclientApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaclientApplication.class, args);
+    }
 
-	@Value("${server.port}")
-	int port;
+    @Value("${server.port}")
+    int port;
 
-	@RequestMapping("/")
-	public String hello(String name) {
-		return String.format("hello %s, i am on port:%d", name,port);
-	}
+    @RequestMapping("/")
+    public String hello(String name) {
+        return String.format("hello %s, i am on port:%d", name, port);
+    }
 }

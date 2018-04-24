@@ -3,7 +3,7 @@ package com.ds.feignservice.service;
 import org.springframework.stereotype.Component;
 
 /**
- * com.ds.feignservice.service
+ * com.ds.feignservice.filter
  *
  * @author tongdongsheng
  * @date 2018/04/24

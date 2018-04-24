@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ribbon-service
+    name: ribbon-filter
 eureka:
   client:
     service-url:

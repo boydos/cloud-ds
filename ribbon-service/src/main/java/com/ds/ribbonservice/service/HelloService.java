@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * com.ds.ribbonservice.service
+ * com.ds.ribbonservice.filter
  *
  * @author tongdongsheng
  * @date 2018/04/24
@@ -20,7 +20,7 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "helloError")
     public String hello(String name) {
-        return template.getForObject("http://EUREKA-CLIENT/?name="+name,String.class);
+        return template.getForObject("http://EUREKA-CLIENT/?name=" + name, String.class);
     }
 
     public String helloError(String name) {
